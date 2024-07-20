@@ -6,6 +6,7 @@ import Photos from './components/Photos/Photos'
 import Lightbox from "./components/Lightbox/Lightbox";
 import Events from './containers/Events/Events'
 import About from './containers/About/About'
+import Beta from './containers/Beta/Beta'
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
       <Route path="/photography/album/:albumId/:photoId" exact component={Lightbox} />
       <Route path="/events" component={Events} />
       <Route path="/about" component={About} />
+      <Route path="/beta" component={Beta} />
     </div>
   )
 }
